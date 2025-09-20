@@ -1,7 +1,11 @@
 <h1 align="center">Hi 👋, I'm Sainath Valavala</h1>
 <h3 align="center">A passionate Frontend developer.</h3>
 
-<p align="left"> <a href="https://twitter.com/sainath__45" target="blank"><img src="https://img.shields.io/twitter/follow/sainath__45?logo=twitter&style=for-the-badge" alt="sainath__45" /></a> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=sainathvalavala&label=Profile%20views&color=0e75b6&style=flat" alt="sainathvalavala" /> </p>
+
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sainathvalavala" alt="sainathvalavala" /></a> </p>
+
+<p align="left"> <a href="https://twitter.com/the_sainathx" target="blank"><img src="https://img.shields.io/twitter/follow/the_sainathx?logo=twitter&style=for-the-badge" alt="the_sainathx" /></a> </p>
 
 - 🌱 I’m currently learning **MERN, Web3**
 
@@ -11,7 +15,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://x.com/SaiNath__001" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="sainath__45" height="30" width="40" /></a>
+<a href="https://twitter.com/the_sainathx" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="the_sainathx" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
