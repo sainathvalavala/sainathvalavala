@@ -1,6 +1,6 @@
 # 💫 About Me:
 ![Profile views](https://komarev.com/ghpvc/?username=sainathvalavala&label=Profile%20views&color=0e75b6&style=flat)
-<br> Hi 👋, I'm Sainath Valavala<br>🌱 I’m currently learning FULL STACK DEVELOPMENT<br>💡 Interested in WEB3, SOLANA, and Open Source Contributions<br>⚙️ Passionate about building end-to-end web applications and exploring Blockchain Innovation<br>📫 How to reach me – sainath56.sol@gmail.com
+<br> Hi 👋, I'm Sainath Valavala<br>🌱 I’m currently learning FULL STACK DEVELOPMENT<br>💡 Interested in WEB3, SOLANA, and Open Source Contributions<br>⚙️ Passionate about building end-to-end web applications and exploring Blockchain Innovation<br>📫 How to reach out me – sainath56.sol@gmail.com
 
 
 ## 🌐 Socials:
