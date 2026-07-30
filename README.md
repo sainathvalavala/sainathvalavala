@@ -216,11 +216,9 @@ const sainath = {
 
 <div align="center">
 
-> ### *“The hard work of thinking can't be outsourced to AI — only amplified by it.”*
+> ***“The hard work of thinking can't be outsourced to AI — only amplified by it.”***
 
 </div>
-
-<br/>
 
 <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
 
