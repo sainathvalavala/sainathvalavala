@@ -17,7 +17,7 @@ permissions:
 jobs:
   snapshot:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -44,21 +44,29 @@ jobs:
             TMP="tmp_${FILE}"
             echo "Fetching ${FILE} ..."
 
-            # Follow redirects, fail on HTTP errors, 20s timeout, retry twice
-            if curl -sSL --fail --max-time 20 --retry 2 "${URL}" -o "${TMP}"; then
-              # Validate: must be an SVG and must NOT contain a known error string
-              if grep -qi "<svg" "${TMP}" \
-                 && ! grep -qi "Something went wrong" "${TMP}" \
-                 && ! grep -qi "No GitHub API tokens" "${TMP}"; then
-                mv "${TMP}" "assets/${FILE}"
-                echo "  ✓ updated assets/${FILE}"
-              else
-                echo "  ✗ error card returned — keeping previous assets/${FILE}"
-                rm -f "${TMP}"
+            SAVED="no"
+            # Try up to 6 times, waiting 15s between attempts, to catch the
+            # flaky rate-limited services when they briefly respond.
+            for ATTEMPT in 1 2 3 4 5 6; do
+              if curl -sSL --fail --max-time 20 --retry 1 "${URL}" -o "${TMP}"; then
+                # Validate: real SVG and NOT a known error card
+                if grep -qi "<svg" "${TMP}" \
+                   && ! grep -qi "Something went wrong" "${TMP}" \
+                   && ! grep -qi "No GitHub API tokens" "${TMP}" \
+                   && ! grep -qi "Maximum retries exceeded" "${TMP}"; then
+                  mv "${TMP}" "assets/${FILE}"
+                  echo "  ✓ updated assets/${FILE} (attempt ${ATTEMPT})"
+                  SAVED="yes"
+                  break
+                fi
               fi
-            else
-              echo "  ✗ fetch failed — keeping previous assets/${FILE}"
               rm -f "${TMP}"
+              echo "  … attempt ${ATTEMPT} failed, retrying in 15s"
+              sleep 15
+            done
+
+            if [ "${SAVED}" = "no" ]; then
+              echo "  ✗ all attempts failed — keeping previous assets/${FILE}"
             fi
           done
 
