@@ -1,0 +1,75 @@
+name: Snapshot Stats Cards
+
+on:
+  # Refresh a few times a day
+  schedule:
+    - cron: "0 */6 * * *"
+  # Manual trigger from the Actions tab
+  workflow_dispatch:
+  # Run on push to main
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Fetch and cache stats cards
+        run: |
+          mkdir -p assets
+
+          # username is the repo owner
+          USER="${{ github.repository_owner }}"
+
+          # Each card: "output_filename|full_url"
+          # A fetch only overwrites the saved file if it succeeds AND the
+          # response is a valid SVG (not an error card). Otherwise the last
+          # good copy in assets/ is kept, so the README never shows a broken image.
+          declare -A CARDS
+          CARDS["stats.svg"]="https://github-readme-stats.vercel.app/api?username=${USER}&theme=react&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=2575fc&icon_color=6a11cb"
+          CARDS["top-langs.svg"]="https://github-readme-stats.vercel.app/api/top-langs/?username=${USER}&theme=react&hide_border=true&layout=compact&langs_count=8&bg_color=0d1117&title_color=2575fc"
+          CARDS["top-repos.svg"]="https://github-contributor-stats.vercel.app/api?username=${USER}&limit=5&theme=react&combine_all_yearly_contributions=true&hide_border=true"
+          CARDS["streak.svg"]="https://streak-stats.demolab.com?user=${USER}&theme=react&hide_border=true&background=0d1117&ring=2575fc&fire=6a11cb&currStreakLabel=2575fc"
+
+          for FILE in "${!CARDS[@]}"; do
+            URL="${CARDS[$FILE]}"
+            TMP="tmp_${FILE}"
+            echo "Fetching ${FILE} ..."
+
+            # Follow redirects, fail on HTTP errors, 20s timeout, retry twice
+            if curl -sSL --fail --max-time 20 --retry 2 "${URL}" -o "${TMP}"; then
+              # Validate: must be an SVG and must NOT contain a known error string
+              if grep -qi "<svg" "${TMP}" \
+                 && ! grep -qi "Something went wrong" "${TMP}" \
+                 && ! grep -qi "No GitHub API tokens" "${TMP}"; then
+                mv "${TMP}" "assets/${FILE}"
+                echo "  ✓ updated assets/${FILE}"
+              else
+                echo "  ✗ error card returned — keeping previous assets/${FILE}"
+                rm -f "${TMP}"
+              fi
+            else
+              echo "  ✗ fetch failed — keeping previous assets/${FILE}"
+              rm -f "${TMP}"
+            fi
+          done
+
+      - name: Commit updated snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: refresh stats card snapshots"
+            git push
+          fi
