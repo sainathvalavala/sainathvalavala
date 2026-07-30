@@ -170,8 +170,8 @@ const sainath = {
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=sainathvalavala&theme=react&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=2575fc&icon_color=6a11cb" />
-<img height="180em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=sainathvalavala&theme=react&hide_border=true&layout=compact&langs_count=8&bg_color=0d1117&title_color=2575fc" />
+<img height="180em" src="https://github-readme-stats.hackclub.dev/api?username=sainathvalavala&theme=react&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=2575fc&icon_color=6a11cb" />
+<img height="180em" src="https://github-readme-stats.hackclub.dev/api/top-langs/?username=sainathvalavala&theme=react&hide_border=true&layout=compact&langs_count=8&bg_color=0d1117&title_color=2575fc" />
 
 <br/>
 
@@ -181,18 +181,6 @@ const sainath = {
 
 <!-- Contribution snake (requires the snake GitHub Action, see setup note) -->
 <img src="https://raw.githubusercontent.com/sainathvalavala/sainathvalavala/output/snake.svg" alt="Snake animation" />
-
-</div>
-
-<br/>
-
-<!-- ═══════════════════════ TROPHIES ═══════════════════════ -->
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=sainathvalavala&theme=algolia&no-frame=true&no-bg=true&margin-w=4&column=7" />
 
 </div>
 
