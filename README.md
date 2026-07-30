@@ -170,8 +170,8 @@ const sainath = {
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.hackclub.dev/api?username=sainathvalavala&theme=react&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=2575fc&icon_color=6a11cb" />
-<img height="180em" src="https://github-readme-stats.hackclub.dev/api/top-langs/?username=sainathvalavala&theme=react&hide_border=true&layout=compact&langs_count=8&bg_color=0d1117&title_color=2575fc" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=sainathvalavala&theme=react&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=2575fc&icon_color=6a11cb" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sainathvalavala&theme=react&hide_border=true&layout=compact&langs_count=8&bg_color=0d1117&title_color=2575fc" />
 
 <br/>
 
@@ -193,6 +193,18 @@ const sainath = {
 <div align="center">
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=sainathvalavala&theme=react-dark&hide_border=true&bg_color=0d1117&color=2575fc&line=6a11cb&point=ffffff&area=true" width="95%" />
+
+</div>
+
+<br/>
+
+<!-- ═══════════════════════ TOP REPOS ═══════════════════════ -->
+
+## 🔝 Top Contributed Repos
+
+<div align="center">
+
+<img src="https://github-contributor-stats.vercel.app/api?username=sainathvalavala&limit=5&theme=react&combine_all_yearly_contributions=true&hide_border=true" />
 
 </div>
 
