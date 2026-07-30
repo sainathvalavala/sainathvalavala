@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="180" viewBox="0 0 450 180">
+  <rect width="450" height="180" rx="12" fill="#0d1117" stroke="#2575fc" stroke-width="1"/>
+  <text x="225" y="85" fill="#2575fc" font-family="Segoe UI, Ubuntu, sans-serif" font-size="15" font-weight="600" text-anchor="middle">Loading stats…</text>
+  <text x="225" y="110" fill="#8b949e" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" text-anchor="middle">run the Snapshot Stats Cards workflow</text>
+</svg>
