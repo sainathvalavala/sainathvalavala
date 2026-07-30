@@ -42,7 +42,6 @@ const sainath = {
   passions: ["Scalable backend systems", "Clean APIs", "Open Source"],
   exploring: ["Applied AI", "LLMs", "RAG pipelines"],
   philosophy: "Design robust, scalable systems that just work.",
-  funFact: "I turn coffee ☕ into resilient APIs.",
 };
 ```
 
@@ -171,12 +170,12 @@ const sainath = {
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=sainathvalavala&theme=react&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=2575fc&icon_color=6a11cb" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sainathvalavala&theme=react&hide_border=true&layout=compact&langs_count=8&bg_color=0d1117&title_color=2575fc" />
+<img height="180em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=sainathvalavala&theme=react&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=2575fc&icon_color=6a11cb" />
+<img height="180em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=sainathvalavala&theme=react&hide_border=true&layout=compact&langs_count=8&bg_color=0d1117&title_color=2575fc" />
 
 <br/>
 
-<img src="https://nirzak-streak-stats.vercel.app/?user=sainathvalavala&theme=react&hide_border=true&background=0d1117&ring=2575fc&fire=6a11cb&currStreakLabel=2575fc" />
+<img src="https://streak-stats.demolab.com?user=sainathvalavala&theme=react&hide_border=true&background=0d1117&ring=2575fc&fire=6a11cb&currStreakLabel=2575fc" />
 
 <br/>
 
@@ -199,13 +198,13 @@ const sainath = {
 
 <br/>
 
-<!-- ═══════════════════════ TOP REPOS ═══════════════════════ -->
+<!-- ═══════════════════════ ACTIVITY GRAPH ═══════════════════════ -->
 
-## 🔝 Top Contributions
+## 📈 Contribution Activity
 
 <div align="center">
 
-<img src="https://github-contributor-stats.vercel.app/api?username=sainathvalavala&limit=5&theme=react&combine_all_yearly_contributions=true&hide_border=true" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=sainathvalavala&theme=react-dark&hide_border=true&bg_color=0d1117&color=2575fc&line=6a11cb&point=ffffff&area=true" width="95%" />
 
 </div>
 
@@ -213,25 +212,11 @@ const sainath = {
 
 <!-- ═══════════════════════ QUOTE ═══════════════════════ -->
 
-## ✍️ Dev Quote of the Day
+## ✍️ What I Believe
 
 <div align="center">
 
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
-
-</div>
-
-<br/>
-
-<!-- ═══════════════════════ SUPPORT ═══════════════════════ -->
-
-## 💰 Support My Work
-
-<div align="center">
-
-If my projects add value to your day, consider fueling the next build ☕
-
-<a href="https://buymeacoffee.com/Sainath_Valavala"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" /></a>
+> ### *“The hard work of thinking can't be outsourced to AI — only amplified by it.”*
 
 </div>
 
