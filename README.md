@@ -6,7 +6,7 @@
 <div align="center">
 
 <!-- Animated header banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0e75b6,50:6a11cb,100:2575fc&height=200&section=header&text=Sainath%20Valavala&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20Backend%20Architect%20%7C%20Applied%20AI&descAlignY=58&descSize=18" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0e75b6,50:6a11cb,100:2575fc&height=200&section=header&text=Sainath%20Valavala&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20Backend%20Engineer%20%7C%20Applied%20AI&descAlignY=58&descSize=18" />
 
 <!-- Typing animation -->
 <a href="https://sainathvalavala.vercel.app">
@@ -36,7 +36,7 @@
 
 ```typescript
 const sainath = {
-  role: "Full-Stack Developer & Backend Architect",
+  role: "Full-Stack Developer & Backend Engineer",
   location: "India 🇮🇳",
   currentlyLearning: ["Distributed Systems", "System Design at Scale"],
   passions: ["Scalable backend systems", "Clean APIs", "Open Source"],
